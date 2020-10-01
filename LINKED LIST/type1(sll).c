@@ -6,7 +6,7 @@ struct node{
 	struct node *next;
 };
 
-void create(struct node **h){
+void create(struct node **h){			//Create Function
 	struct node *cur, *ptr;
 	*h = NULL;
 	for(int i = 0 ;i < 5;++i){
