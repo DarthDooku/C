@@ -32,7 +32,7 @@ void display(struct node *h){
 	printf("\n");
 }
 
-void insert(struct node **h,int v, int n){
+void insert(struct node **h,int v, int n){     //insert function
 	struct node *cur,*ptr;
 	cur = (struct node *) malloc(sizeof(struct node));
 	cur->data = v;
