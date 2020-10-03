@@ -5,7 +5,8 @@ int main()
     int n;
     printf("Enter no.of integers:");
     scanf("%d",&n);
-    int a[n],i,j,temp;
+    int a[n],j,temp;
+    int i=0;
     for(i=0;i<n;i++)
     {
         a[i]=rand()%101;
