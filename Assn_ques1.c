@@ -1,6 +1,3 @@
-/*Abhishek Agrawal
-20194144
-Singly Linked List with all addition and deletion functions*/
 #include<stdio.h>
 #include<stdlib.h>
 struct node{
