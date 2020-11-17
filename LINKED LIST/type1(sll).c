@@ -57,7 +57,7 @@ void insert(struct node **h,int v, int n){
 	}
 }
 
-void delete(struct node **h, int p){
+void delete(struct node **h, int p){            //delete function
 	struct node *ptr,*prv;
 	if(*h == NULL){
 		printf("Empty\n");
