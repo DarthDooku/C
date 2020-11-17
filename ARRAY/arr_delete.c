@@ -5,7 +5,7 @@ int main() //main function
     int n;
     printf("Enter no.of integers:");
     scanf("%d",&n);
-    int a[n],i,j,temp1,temp2,p,val;
+    int a[n],i,j,temp1,temp2,p,val; //var declarations
     for(i=0;i<n-3;i++)
     {
         a[i]=rand()%101;
