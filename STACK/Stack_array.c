@@ -14,7 +14,7 @@ int push(STACK *s,int v)
     s->data[s->top]=v;
     return 0;
 }
-int pop(STACK *s,int *v)
+int pop(STACK *s,int *v) //pop function
 {
     if(s->top==-1)
         return 1;
