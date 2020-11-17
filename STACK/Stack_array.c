@@ -22,7 +22,7 @@ int pop(STACK *s,int *v)
     s->top--;
     return *v;
 }
-void traverse(STACK *s)
+void traverse(STACK *s) //function for traversing
 {
     if(s->top==-1)
         printf("Stack is empty\n");
