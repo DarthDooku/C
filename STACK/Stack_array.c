@@ -1,7 +1,7 @@
 //Stack operations using array
 #include<stdio.h>
 #define MAX 5
-typedef struct{
+typedef struct{     //stack adt defined
     int data[MAX];
     int top;
 }STACK;
