@@ -6,7 +6,7 @@ typedef struct{
     int top;
 }STACK;
 
-int push(STACK *s,int v)
+int push(STACK *s,int v) //push function
 {
     if(s->top==MAX-1)
         return 1;
