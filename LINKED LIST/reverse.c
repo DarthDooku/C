@@ -29,7 +29,7 @@ void display(struct node *h){
 	for(ptr = h; ptr!= NULL; ptr = ptr->next){
 		printf("%d ", ptr->data);
 	}
-	printf("\n");
+	printf("\n\n\n\n\n");
 }
 
 void reverse(struct node **h){
