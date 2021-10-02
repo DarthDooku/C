@@ -8,7 +8,7 @@ int main()
     int a[n],i,j,temp1,temp2,p,val;
     for(i=0;i<n-3;i++)
     {
-        a[i]=rand()%101;
+        a[i]=rand()%10001;
     }
     for(i=0;i<n-3;i++)
     {
