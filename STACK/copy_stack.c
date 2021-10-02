@@ -74,6 +74,8 @@ int main()
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s1.data[i]);
+    
+    printf("Result was successfully given\n");
 
     return 0;
 }
