@@ -31,7 +31,7 @@ int popStack(STACK *s, int *v)
     return 0;
 }
 
-int copyy(STACK s1, STACK *s2)
+int copyStack(STACK s1, STACK *s2)
 {
     for(int i=0;i<=s1.top;i++)
     {
@@ -62,7 +62,7 @@ int main()
         printf("%d\t",s1.data[i]);
     printf("\n");
 
-    copyy(s1,&s2);
+    copyStack(s1,&s2);
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s2.data[i]);
