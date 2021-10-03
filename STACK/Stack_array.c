@@ -1,6 +1,6 @@
 //Stack operations using array
 #include<stdio.h>
-#define MAX 5
+#define MAX 15
 typedef struct{
     int data[MAX];
     int top;
@@ -40,7 +40,7 @@ int main()
 {
     STACK s1;
     s1.top=-1;
-    int ch,v,m,q,k;
+    int choice,v,m,q,k;
     while(1)
     {
         printf("1.Push\n");
@@ -49,9 +49,9 @@ int main()
         printf("4.Quit\n");
         printf("\n");
         printf("Enter your choice: ");
-        scanf("%d",&ch);
+        scanf("%d",&choice);
 
-        switch(ch)
+        switch(choice)
         {
             case 1:
                 printf("Enter element: ");
