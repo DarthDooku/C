@@ -6,7 +6,7 @@ struct node{
 	struct node *next;
 };
 
-void create(struct node **h, int n){
+void makeList(struct node **h, int n){
 	struct node *cur, *ptr;
 	*h = NULL;
 	for(int i = 0 ;i <= n;++i){
@@ -65,10 +65,10 @@ int main(void){
 	int n;
 	printf("Enter max power : ");
 	scanf("%d",&n);
-	create(&h1,n);
+	makeList(&h1,n);
 	printf("Enter max power : ");
 	scanf("%d",&n); 
-	create(&h2,n);
+	makeList(&h2,n);
 	display(h1); display(h2);
 	join(&h1,h2);
 	simplify(&h1);
