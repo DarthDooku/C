@@ -25,9 +25,10 @@ void create(struct node **h){
 }
 
 void display(struct node *h){
-	struct node *ptr;
-	for(ptr = h; ptr!= NULL; ptr = ptr->next){
+	struct node *ptr = h;
+	while(ptr != NULL){
 		printf("%d ", ptr->data);
+		ptr = ptr->next;
 	}
 	printf("\n");
 }
