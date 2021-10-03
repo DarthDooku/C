@@ -29,6 +29,8 @@ int main()
     {
       printf("%d  ",a[i]);
     }
-
+    for(int i=0; i<n;++i){
+        printf("-");
+    }
     return 0;
 }
