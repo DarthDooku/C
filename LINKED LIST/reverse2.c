@@ -3,6 +3,7 @@
 
 struct node{
 	int data;
+	int pos;
 	struct node *next,*prv;
 }*head;
 
@@ -13,6 +14,7 @@ void create(struct node **h){
 		cur->data = random()%11;
 		cur->next = NULL;
 		cur->prv = NULL;
+		cur->pos = NULL;
 		if(*h == NULL){
 			*h = cur;
 			ptr = cur;
