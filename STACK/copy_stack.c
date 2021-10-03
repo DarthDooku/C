@@ -6,7 +6,7 @@ typedef struct
     int top;
 }STACK;
 
-int push(STACK *s1, int v)
+int pushStack(STACK *s1, int v)
 {
     if(s1->top == MAX-1)
     {
@@ -19,7 +19,7 @@ int push(STACK *s1, int v)
 
 }
 
-int pop(STACK *s, int *v)
+int popStack(STACK *s, int *v)
 {
     if(s->top==-1)
     {
@@ -53,10 +53,10 @@ int main()
     STACK s1,s2;
     s1.top = -1;
     s2.top = -1;
-    k = push(&s1,5);
-    k = push(&s1,10);
-    k = push(&s1,15);
-    k = push(&s1,20);
+    k = pushStack(&s1,5);
+    k = pushStack(&s1,10);
+    k = pushStack(&s1,15);
+    k = pushStack(&s1,20);
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s1.data[i]);
@@ -68,9 +68,9 @@ int main()
         printf("%d\t",s2.data[i]);
     printf("\n");
 
-    q = pop(&s1,&m);
-    q = pop(&s1,&m);
-    q = pop(&s1,&m);
+    q = popStack(&s1,&m);
+    q = popStack(&s1,&m);
+    q = popStack(&s1,&m);
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s1.data[i]);
