@@ -3,7 +3,7 @@
 int main()
 {
     int n;
-    printf("Enter no.of integers:");
+    printf("Enter number of integers:");
     scanf("%d",&n);
     int a[n],i,j,temp,p;
     for(i=0;i<n;i++)

@@ -5,8 +5,8 @@ typedef struct
     int data[MAX];
     int top;
 }STACK;
-
-int push(STACK *s1, int v)
+// function to push element on stack
+int pushStack(STACK *s1, int v)
 {
     if(s1->top == MAX-1)
     {
@@ -18,8 +18,8 @@ int push(STACK *s1, int v)
     return 0;
 
 }
-
-int pop(STACK *s, int *v)
+// function to pop element from stack
+int popStack(STACK *s, int *v)
 {
     if(s->top==-1)
     {
@@ -30,8 +30,8 @@ int pop(STACK *s, int *v)
     s->top--;
     return 0;
 }
-
-int copyy(STACK s1, STACK *s2)
+// function to copy stack
+int copyStack(STACK s1, STACK *s2)
 {
     for(int i=0;i<=s1.top;i++)
     {
@@ -53,24 +53,24 @@ int main()
     STACK s1,s2;
     s1.top = -1;
     s2.top = -1;
-    k = push(&s1,5);
-    k = push(&s1,10);
-    k = push(&s1,15);
-    k = push(&s1,20);
+    k = pushStack(&s1,5);
+    k = pushStack(&s1,10);
+    k = pushStack(&s1,15);
+    k = pushStack(&s1,20);
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s1.data[i]);
     printf("\n");
 
-    copyy(s1,&s2);
+    copyStack(s1,&s2);
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s2.data[i]);
     printf("\n");
 
-    q = pop(&s1,&m);
-    q = pop(&s1,&m);
-    q = pop(&s1,&m);
+    q = popStack(&s1,&m);
+    q = popStack(&s1,&m);
+    q = popStack(&s1,&m);
 
     for(int i=0;i<=s1.top;i++)
         printf("%d\t",s1.data[i]);
