@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 struct node{
 	int coeff,exp;
 	struct node *next;
