@@ -5,7 +5,7 @@ typedef struct
     int data[MAX];
     int top;
 }STACK;
-
+// function to push element on stack
 int pushStack(STACK *s1, int v)
 {
     if(s1->top == MAX-1)
@@ -18,7 +18,7 @@ int pushStack(STACK *s1, int v)
     return 0;
 
 }
-
+// function to pop element from stack
 int popStack(STACK *s, int *v)
 {
     if(s->top==-1)
@@ -30,7 +30,7 @@ int popStack(STACK *s, int *v)
     s->top--;
     return 0;
 }
-
+// function to copy stack
 int copyStack(STACK s1, STACK *s2)
 {
     for(int i=0;i<=s1.top;i++)
